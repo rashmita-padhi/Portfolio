@@ -1,0 +1,289 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background-color: rgb(2, 4, 31);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+}
+
+/* Navbar Styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(4, 4, 65);
+    height: 60px;
+    padding: 0 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav li {
+    list-style: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+nav li:hover a {
+    color: rgb(255, 200, 0);
+}
+
+/* Home Section */
+.firstsection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    padding: 0 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 50px;
+}
+
+.leftsection {
+    text-align: left;
+    max-width: 50%;
+}
+
+.leftsection h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: rgb(255, 200, 0);
+}
+
+.leftsection p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.leftsection .btn {
+    background-color: rgb(25, 25, 219);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.leftsection .btn:hover {
+    background-color: rgb(255, 200, 0);
+    color: black;
+    transform: scale(1.05);
+}
+
+.rightsection img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* About Section */
+#about {
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.05);
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: rgb(255, 200, 0);
+}
+
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Skills Section */
+#skills {
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+#skills h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: rgb(255, 200, 0);
+}
+
+.skill-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skill i {
+    font-size: 1.5rem;
+}
+
+.skill .progress {
+    height: 10px;
+    background-color: rgb(255, 200, 0);
+    border-radius: 5px;
+}
+
+/* Projects Section */
+#projects {
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.05);
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+#projects h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: rgb(255, 200, 0);
+}
+
+.project-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.project-card a {
+    color: rgb(255, 200, 0);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.project-card a:hover {
+    color: white;
+}
+
+/* Certificate Section */
+#certificates {
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+#certificates h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: rgb(255, 200, 0);
+}
+
+.certificate-grid {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.certificate-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.certificate-item img {
+    width: 200px;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s;
+}
+
+.certificate-item .certificate-name {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+    transition: bottom 0.3s;
+}
+
+.certificate-item:hover img {
+    opacity: 0.7;
+}
+
+.certificate-item:hover .certificate-name {
+    bottom: 0;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.05);
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: rgb(255, 200, 0);
+}
+
+#contact p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(25, 25, 219);
+    margin-top: 50px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+}
